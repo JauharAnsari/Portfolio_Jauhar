@@ -758,7 +758,6 @@
             }
         }
         
-        /* Touch devices optimization */
         @media (hover: none) {
             .cta-button:hover {
                 background: transparent;
@@ -830,7 +829,8 @@
                 <div class="tech-icon"><i class="devicon-androidstudio-plain colored"></i></div>
             </div>
             <div class="profile-circle">
-                <img src="assets/profile_avatar.png" alt="Jauhar - Android Developer">
+                <!-- UPDATED PROFILE IMAGE HERE -->
+                <img src="profile.jpg" alt="Jauhar - Android Developer">
             </div>
         </div>
     </section>
@@ -878,15 +878,13 @@
                 <div class="code-line">};</div>
             </div>
         </div>
-
-
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
         <h2 class="section-title" data-aos="fade-up">Experience</h2>
         <div class="experience-container">
-            <!-- New Internship -->
+
             <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="experience-header">
                     <h3>Android App Developer <span class="company">@ ArkTeck Plugins</span></h3>
@@ -907,7 +905,6 @@
                 </ul>
             </div>
 
-            <!-- Old Internship -->
             <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
                 <div class="experience-header">
                     <h3>Android Developer <span class="company">@ arcAI.engineer</span></h3>
@@ -924,6 +921,7 @@
                     <li>Resulted in a more dynamic, flexible, and efficient application structure.</li>
                 </ul>
             </div>
+
         </div>
     </section>
 
@@ -931,6 +929,7 @@
     <section id="projects">
         <h2 class="section-title" data-aos="fade-up">My Projects</h2>
         <div class="projects-grid">
+
             <div class="project-card" data-aos="zoom-in" data-aos-delay="100">
                 <h3>FoodExpress</h3>
                 <p>A complete food delivery app with user-friendly shopping cart, order tracking, real-time search, and
@@ -981,6 +980,7 @@
                     <a href="#" class="cta-button" style="padding: 10px 20px; font-size: 14px;">View Details</a>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -988,6 +988,7 @@
     <section id="contact">
         <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
         <div class="contact-content">
+
             <div class="contact-info" data-aos="fade-right">
                 <h3 style="font-size: 32px; margin-bottom: 30px;">Let's collaborate! I am always open to discussing
                     exciting projects and new opportunities.</h3>
@@ -1036,16 +1037,14 @@
                     <button type="submit" class="cta-button" style="width: 100%;">SEND MESSAGE</button>
                 </form>
             </div>
+
         </div>
-
-
     </section>
 
     <div class="scroll-indicator">↓</div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize AOS
         AOS.init({
             once: true,
             offset: 100,
@@ -1053,7 +1052,6 @@
             easing: 'ease-in-out',
         });
 
-        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1064,7 +1062,6 @@
             });
         });
 
-        // Typing effect
         const titles = ['Android Developer', 'Code Explorer', 'App Builder', 'Tech Enthusiast'];
         let titleIndex = 0;
         let charIndex = 0;
@@ -1095,7 +1092,6 @@
 
         type();
 
-        // Hide scroll indicator after first section
         window.addEventListener('scroll', () => {
             const scrollIndicator = document.querySelector('.scroll-indicator');
             if (window.scrollY > 300) {
@@ -1105,7 +1101,6 @@
             }
         });
 
-        // Highlight active nav link
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-links a');
 
